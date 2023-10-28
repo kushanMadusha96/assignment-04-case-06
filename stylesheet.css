@@ -1,0 +1,85 @@
+body {
+    overflow: hidden;
+}
+#road>img {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 400vw;
+    height: 300px;
+    animation: road 4s ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+#car>img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 350px;
+    margin: auto;
+    animation-iteration-count: infinite;
+}
+#wheel2>img {
+    position: absolute;
+    top: 426px;
+    left: 836px;
+    animation: wheel 4s linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+#wheel1>img {
+    position: absolute;
+    top: 426px;
+    left: 622px;
+    animation: wheel 4s linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+#city>img {
+    position: absolute;
+    top: 108px;
+    width: 400vw;
+    height: 300px;
+    animation: city 4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+#sky>img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 200vw;
+}
+@keyframes city {
+    from{
+        position: absolute;
+        left: 0;
+    }
+    to{
+        position: absolute;
+        left: -300vw;
+    }
+}
+@keyframes road {
+    from {
+        position: absolute;
+        left: 0;
+    }
+    to {
+        position: absolute;
+        left: -300vw;
+    }
+}
+@keyframes wheel {
+    0%, 50% {
+        transform: rotate(360deg);
+    }
+    50%,60% {
+        transform: rotate(90deg);
+    }
+    60%,80% {
+        transform: rotate(180deg);
+    }
+    80%,100% {
+        transform: rotate(360deg);
+    }
+}
